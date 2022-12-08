@@ -1,0 +1,54 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "SOLID API",
+      "contact": {
+        "email": "a@b.com"
+      },
+      "description": "Great Api SOLID Development",
+      "version":  "1.0.0"
+    },
+    "paths": {
+      "/users": {
+        
+        "get": {
+          "tags": ["users"],
+          "sumary": "Get Users",
+          "description": "Find User Data",
+          "responses": {
+            "200": {
+              "description": "User Created",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "items": {
+                      "type": "string"
+                    },
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "example": {
+                    "admin": false,
+                    "id": "f0f0cbe2-306a-4ed5-a2f1-8d366800dfa0",
+                    "name": "vithor",
+                    "email": "a@b.com",
+                    "created_at": "2022-02-02",
+                    "updated_at": "2022-02-02"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+
+}
